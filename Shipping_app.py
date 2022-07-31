@@ -1,6 +1,3 @@
-from ast import While
-
-
 print("""
 
                                         Welcome to XXXXXX Shipping Company
