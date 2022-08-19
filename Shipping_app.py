@@ -1,5 +1,6 @@
 while True:
-    print("""
+    def welcome_page():
+            print("""
 
                                             Welcome to XXXXXX Shipping Company
 
@@ -27,7 +28,8 @@ while True:
 
     """)
 
-
+    
+    welcome_page()
     weight = float(input("Please Enter your weight: "))
 
     cost_premium = 125.00
@@ -68,3 +70,5 @@ while True:
 
     if input('\nDo you want to repeat(y/n)') == 'n':
         break
+
+    
