@@ -1,6 +1,5 @@
-while True:
-    def welcome_page():
-            print("""
+def welcome_page():
+    print("""
 
                                             Welcome to XXXXXX Shipping Company
 
@@ -28,6 +27,9 @@ while True:
 
     """)
 
+while True:
+
+
     
     welcome_page()
     weight = float(input("Please Enter your weight: "))
@@ -48,6 +50,7 @@ while True:
     elif weight > 10:
       cost_ground = (4.75 * weight) +20
 
+
     print("ground shipping cost is ", cost_ground)
 
     #Premium Shipping
@@ -65,6 +68,7 @@ while True:
 
     elif weight > 10:
       drone_cost = (14.25 * weight)
+   
 
     print("Drone Shipping cost is ", drone_cost)
 
