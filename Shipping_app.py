@@ -1,3 +1,5 @@
+
+
 def welcome_page():
     print("""
 
@@ -27,14 +29,25 @@ def welcome_page():
 
     """)
 
+
 while True:
 
+    class variable:
+        sentence1 = "Please Enter your weight: "
+        sentence2 = "ground shipping cost is "
+        sentence3 = "Premium Shipping cost is "
+        sentence4 = "Drone Shipping cost is "
+        sentence5 = '\nDo you want to repeat(y/n)'
+        cost_premium = 125.00
 
     
-    welcome_page()
-    weight = float(input("Please Enter your weight: "))
+    
+    
+    welcome_page()                                  #this function to call the welcome page 
+    inputs = variable()                             #Assign class to a variable
+    
+    weight = float(input(inputs.sentence1))         #Ask user to enter the weight inputs is to call the class and sentence1 in the class
 
-    cost_premium = 125.00
 
 
     #“Ground Shipping”
@@ -51,10 +64,10 @@ while True:
       cost_ground = (4.75 * weight) +20
 
 
-    print("ground shipping cost is ", cost_ground)
+    print(inputs.sentence2, cost_ground)            #Print out the sentence2 and show the result for the ground cost
 
     #Premium Shipping
-    print("ground shipping premium cost is ", cost_premium)
+    print(inputs.sentence3, inputs.cost_premium)    #Print out the sentence3 and show the result for the Premium Shipping
 
     #“Drone Shipping”
     if weight <= 2:
@@ -70,9 +83,9 @@ while True:
       drone_cost = (14.25 * weight)
    
 
-    print("Drone Shipping cost is ", drone_cost)
+    print(inputs.sentence4, drone_cost)             #Print out the sentence4 and show the result for the Drone Shipping
 
-    if input('\nDo you want to repeat(y/n)') == 'n':
+    if input(inputs.sentence5) == 'n':              #To repeat the request if the user ask to repeat
         break
 
     
